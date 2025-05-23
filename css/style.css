@@ -91,8 +91,6 @@ header {
         .photomoi {
             width: 200px;
             height: 200px;
-            /* position: absolute; */
-            right: 10px;
 
             img {
                 width: 100%;
@@ -130,7 +128,7 @@ header {
             }
         }
         .compétences {
-            width: 30%;
+            width: 40%;
 
             h3 {
                 text-align: center;
@@ -180,12 +178,16 @@ header {
             article {
                 display: flex;
                 flex-direction: column;
-                width: 500px;
-                padding: 0;
+                width: 50%;
+                padding: 20px;
+
+                div {
+                    height: 53%;
+                }
 
                 img {
-                    width: 450px;
-                    height: 269px;
+                    width: 95%;
+                    object-fit: cover;
                     /* box-shadow: 0px 2px 4px -2px #0000001A;
 
                     box-shadow: 0px 4px 6px -1px #0000001A; */
@@ -247,20 +249,17 @@ header {
             justify-content: space-between;
             margin: 0 16% 0;
         }
-        .message{
+        .message {
             display: flex;
             flex-direction: column;
             margin: 3% 16%;
-            
-
         }
-        button{
+        button {
             background-color: var(--green);
             color: var(--white);
             padding: 10px 15px;
             border-radius: 30px;
         }
-
 
         label {
             display: block;
@@ -309,10 +308,104 @@ footer {
 
             div {
                 gap: 25px;
+                justify-content: flex-end;
+                margin: 0;
+
+                a {
+                    color: var(--white);
+                }
 
                 i {
                     font-size: 35px;
                 }
+            }
+        }
+    }
+}
+
+/* Responsive tablette */
+@media screen and (max-width: 1024px) {
+    .contact {
+        & form {
+            input {
+                border-radius: 5px;
+                font-size: 1em;
+            }
+        }
+    }
+
+    .mesprojets {
+        .projects {
+            div {
+                article {
+                    width: 50%;
+                    padding: 20px;
+                    img {
+                        width: 95%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* responsive telephone */
+@media screen and (max-width: 768px){
+    header{
+
+        ul{
+            display: none;
+        }
+    }
+    .presentation{
+        height: 100%;
+
+        .largeur{
+            flex-direction: column;
+
+            .prestext{
+                width: 76%;
+                padding: 15px;
+            }
+            .photomoi{
+                padding: 15px;
+            }
+        }
+    }
+    .apropos{
+
+        .parcomp{
+            display: block;
+
+            .parcour{
+                width: 100%;
+            }
+        }
+    }
+        .mesprojets {
+        & .projects {
+            div {
+                flex-direction: column;
+                align-items: center;
+
+                article{
+                    width: 85%;
+
+                    .detail{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .contact{
+
+        form{
+
+            .nameemail{
+                display: block;
+                margin: 0;
             }
         }
     }
