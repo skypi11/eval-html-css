@@ -74,7 +74,7 @@
                 </div>
             </section>
             <section class="mesprojets">
-                <div>
+                <div class="projects">
                     <h2>Projets recents</h2>
                     <p>
                         Découvrez une sélection de mes travaux récents qui
@@ -83,11 +83,13 @@
                     </p>
                     <div>
                         <article>
-                            <img
-                                src="/img/projet1.webp"
-                                alt="projet Home key"
-                            />
                             <div>
+                                <img
+                                    src="/img/projet1.webp"
+                                    alt="projet Home key"
+                                />
+                            </div>
+                            <div class="detail">
                                 <h3>Home key</h3>
                                 <p>
                                     Projet de site internet avec galerie au
@@ -97,11 +99,17 @@
                                     <p class="language">html 5</p>
                                     <p class="language">CSS</p>
                                 </div>
+                                <a href="/projects.html">Voir le projet →</a>
                             </div>
                         </article>
                         <article>
-                            <img src="/img/projet2.webp" alt="projet Vividly" />
                             <div>
+                                <img
+                                    src="/img/projet2.webp"
+                                    alt="projet Vividly"
+                                />
+                            </div>
+                            <div class="detail">
                                 <h3>Vividly</h3>
                                 <p>
                                     Projet de site avec plusieurs page en mobile
@@ -111,13 +119,64 @@
                                     <p class="language">html 5</p>
                                     <p class="language">CSS</p>
                                 </div>
+                                <a href="/projects.html">Voir le projet →</a>
                             </div>
                         </article>
                     </div>
                 </div>
             </section>
-            <section></section>
-            <footer></footer>
+            <section class="contact">
+                <h2>Contactez moi</h2>
+                <p>
+                    Vous avez un projet en tête ou une question ? N'hésitez pas
+                    à me contacter, je vous répondrai dans les plus brefs
+                    délais.
+                </p>
+                <form action="">
+                    <div class="nameemail">
+                        <div class="name">
+                            <label for="name">Nom</label>
+                            <input type="text" name="name" id="" />
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="" />
+                        </div>
+                    </div>
+                    <div class="message">
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="" rows="3"></textarea>
+                    </div>
+                    <div class="agree">
+                        <input type="checkbox" name="agree" id="" required />
+                        <label for="agree" ">
+                            J'accepte que mes données soient traitées
+                            conformément à la politique de confidentialité.
+                            Elles ne seront utilisées que pour répondre à ma
+                            demande.</label
+                        >
+                    </div>
+                    <button>Envoyer le message</button>
+                </form>
+            </section>
+            <footer>
+                <div>
+                    <div class="nomfooter">
+                        <a href="/index.html">Matthieu MOLINES</a>
+                        <p>Développeur web / web mobile</p>
+                    </div>
+                    <div class="reseaux">
+                        <div>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <p>
+                            <i class="fa-solid fa-copyright"></i>2025 Matthieu
+                            MOLINES tous droits réserver
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </main>
     </body>
 </html>
