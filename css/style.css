@@ -45,7 +45,17 @@ header {
         display: flex;
         list-style: none;
         gap: 30px;
+
+        a{
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        li:hover a{
+            background-color: var(--green);
+        }
     }
+    
 }
 
 /* main */
@@ -150,8 +160,13 @@ header {
     }
     a {
         margin-left: 10%;
-        padding: 5px 0;
+        padding: 5px 15px;
         color: var(--green);
+        border-radius: 10px;
+    }
+    a:hover{
+        background-color: var(--green);
+        color: var(--white);
     }
 }
 .mesprojets {
@@ -198,7 +213,7 @@ header {
                     flex-direction: column;
                     background-color: var(--white);
                     margin: 0;
-                    height: 215px;
+                    height: 60%;
 
                     h3 {
                         padding: 10px 10px;
@@ -222,7 +237,12 @@ header {
                     }
                     a {
                         color: var(--green);
-                        padding: 10px;
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                    }
+                    a:hover{
+                        color: var(--white);
+                        background-color: var(--green);
                     }
                 }
             }
@@ -230,6 +250,7 @@ header {
     }
 }
 .contact {
+    margin-bottom: 20px;
     h2 {
         text-align: center;
         padding: 15px;
@@ -243,6 +264,7 @@ header {
         max-width: 900px;
         margin: auto;
         padding: 25px;
+        border-radius: 15px;
 
         .nameemail {
             display: flex;
@@ -351,61 +373,70 @@ footer {
 }
 
 /* responsive telephone */
-@media screen and (max-width: 768px){
-    header{
-
-        ul{
+@media screen and (max-width: 767px) {
+    header {
+        ul {
             display: none;
         }
     }
-    .presentation{
+    .presentation {
         height: 100%;
 
-        .largeur{
+        .largeur {
             flex-direction: column;
 
-            .prestext{
+            .prestext {
                 width: 76%;
                 padding: 15px;
             }
-            .photomoi{
+            .photomoi {
                 padding: 15px;
             }
         }
     }
-    .apropos{
-
-        .parcomp{
+    .apropos {
+        .parcomp {
             display: block;
 
-            .parcour{
+            .parcour {
+                width: 100%;
+            }
+            .compétences {
                 width: 100%;
             }
         }
     }
-        .mesprojets {
-        & .projects {
+    .mesprojets {
+        .projects {
+            p{
+                padding: 0 10px;
+            }
             div {
                 flex-direction: column;
                 align-items: center;
 
-                article{
+                article {
                     width: 85%;
 
-                    .detail{
+                    .detail {
                         height: 100%;
                     }
                 }
             }
         }
     }
-    .contact{
-
-        form{
-
-            .nameemail{
+    .contact {
+        form {
+            .nameemail {
                 display: block;
-                margin: 0;
+                margin: 0 0 15px 0;
+
+                .name {
+                    padding-bottom: 15px;
+                }
+            }
+            .message {
+                margin: 0 10px 10px 0;
             }
         }
     }
