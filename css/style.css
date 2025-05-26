@@ -61,7 +61,7 @@ header {
 /* main */
 .presentation {
     height: 400px;
-    background-image: url("img/background.webp");
+    background-image: url("/img/background.webp");
     background-position: -137px;
     background-size: 125%;
     display: flex;
